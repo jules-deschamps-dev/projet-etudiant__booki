@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang='fr'>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Booki </title>
+		<link rel='stylesheet' href='css/form.css' />
+		<link rel="stylesheet" type="text/css" href="css/all.css">
+		<link href="img/logo/fav.png" rel="shortcut icon">
+	</head>
+
+	<body>
+
+<!-- Navigateur-->
+		<nav class="ultraPadding">
+			<div id="mainLogoBloc">
+				<img src="img/logo/Booki.png" id="mainLogoImg" alt="logo"/>
+			</div>
+			<div id="navBloc">
+				<a href="#lodgingSection">
+					<div class="navDiv">
+						<span class="centerTxt"> Hébérgements
+						</span>
+					</div>
+				</a>
+				<a href="#activitySection">
+					<div class="navDiv">
+						<span class="centerTxt"> Activités
+						</span>
+					</div>
+				</a>
+			</div>
+		</nav>
+
+<!---->
+
+		<header class="ultraPadding ultraPaddingHeader">
+		<!-- top of header -->
+			<h1>
+				Trouvez votre hébergement pour des vacances de rêve
+			</h1> 
+			En plein centre ville ou en pleine nature
+		<!-- end top of header -->
+
+		<!-- localisation -->
+			<div id="localisationDiv">
+				<div id="localisationBtn">
+					<i class="fas fa-map-marker-alt margin">
+					</i>
+				</div>
+				<form id="localisationForm">
+					<input id="localisationInput" type="text" name="localisationUser" placeholder="Marseille, France" />
+					<button id="localisationSearching" type="submit"> 
+						<span id="localisationSearchingTxt">
+							Rechercher
+						</span>
+						<span id="localisationSearchingImg"> 
+							<i class="fas fa-magnifying-glass"></i>
+						</span> 
+					</button>
+				</form>
+			</div>
+			<!-- end localisation -->
+
+		<!-- filtres -->
+			<div id="filters">
+				<h3 id="filterTitle"> Filtres </h3>
+				<div id="filterContainer">
+					<a href="">
+						<div class="filterdiv">
+							<i class="fasFilter fas fa-money-bill-wave"></i>
+							<span class="filterdivTxt">
+								Economique
+							</span>
+						</div>
+					</a>
+					<a href="">
+						<div class="filterdiv">
+							<i class="fasFilter fas fa-child"></i>
+							<span class="filterdivTxt">
+								Familial
+							</span>
+						</div>
+					</a>
+					<a href="">
+						<div class="filterdiv">
+							<i class="fasFilter fas fa-heart"></i>
+							<span class="filterdivTxt">
+								Romantique 
+							</span>
+						</div>
+					</a>
+					<a href="">
+						<div class="filterdiv">
+							<i class="fasFilter fas fa-dog"></i>
+							<span class="filterdivTxt">
+								Animaux autorisés 
+							</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		<!-- end filtres -->
+
+		<!-- bottom header -->
+			<div class="info_symb">
+				<i class="fas fa-info blueStar"></i>
+			</div>
+				Plus de 500 logements sont disponible dans cette ville
+		<!-- end bottom header -->
+		</header>
+
+<!---->
+
+		<main class="ultraPadding">
+			<div class="bigBloc">
+				<section id="popularSection">
+					<div class="underSectionBlock">
+						<div class="titreContainerB">
+							<h2 class="title_B"> Les plus populaire </h2>
+							<i class="inline right fas fa-chart-line"></i>
+						</div>
+						<div id="thumbNcontainerB" class="thumbNcontainer">
+							<div class="thumb thumbn_B">
+								<div class="thumbn_B_img" id="thumbn_B1_img"></div>
+								<div class="thumbn_B_info">
+									<div class="thumbn_B_txt">
+										<h3 class="boldTxt"> Hôtel Le soleil du matin </h3>
+										<span class=""> Nuit à partir de </span> 128€ <br />
+									</div>
+									<div class="starBloc starBloc_B">
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+
+							<div class="thumb thumbn_B">
+								<div id="thumbn_B2_img" class="thumbn_B_img"></div>
+								<div class="thumbn_B_info">
+									<div class="thumbn_B_txt">
+										<h3 class="boldTxt"> Au coeur de l'eau Chambre d'hôtes </h3>
+										<span class=""> Nuit à partir de </span> 71€ <br />
+									</div>
+									<div class="starBloc starBloc_B">
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="greyStar fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+
+							<div class="thumb thumbn_B">
+								<div id="thumbn_B3_img" class="thumbn_B_img"></div>
+								<div class="thumbn_B_info">
+									<div class="thumbn_B_txt">
+										<h3 class="boldTxt"> Hôtel Tout bleu et Blanc </h3>
+										<span class=""> Nuit à partir de </span> 68€ 
+									</div>
+									<div class="starBloc starBloc_B">
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="greyStar fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+							<div class="phantom thumb thumbn_B thumbVide">
+								<div class="triplePointBig-container">
+									<div class="triplePoints"></div>
+									<div class="triplePoints"></div>
+									<div class="triplePoints"></div>
+									
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+				<section id="lodgingSection">
+					<div class="underSectionBlock">
+						<h2> Hébergement à Marseille </h2>
+
+						<div id="thumbNcontainerA" class="thumbNcontainer">
+							<div class="thumb thumbn_A">
+								<div id="thumbn_A1_img" class="thumbn_A_img"></div>
+								<div class="thumbn_A_info">
+									<span class="boldTxt "> Auberge La Cannebière </span> 
+									<span> Nuit à partir de 25€ </span> 
+									<div class="starBloc starBloc_A">
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="greyStar fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+
+							<div class="thumb thumbn_A">
+								<div id="thumbn_A2_img" class="thumbn_A_img"> </div>
+								<div class="thumbn_A_info">
+									<span class="boldTxt"> Hôtel de port </span> 
+									<span class=""> Nuit à partir de 52€ </span>
+									<div class="starBloc starBloc_A">
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+
+							<div class="thumb thumbn_A">
+								<div id="thumbn_A3_img" class="thumbn_A_img"> </div>
+								<div class="thumbn_A_info">
+									<span class="boldTxt"> Hôtel Les mouettes </span>
+									<span class=""> Nuit à partir de 76€</span>
+									<div class="starBloc starBloc_A">
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="greyStar fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+
+							<div class="thumb thumbn_A">
+								<div id="thumbn_A4_img" class="thumbn_A_img"> </div>
+								<div class="thumbn_A_info">
+									<span class="boldTxt"> Hotel de la mer </span>
+									<span class=""> Nuit à partir de 46€</span>
+									<div class="starBloc starBloc_A">
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="greyStar fas fa-star"></i>
+										<i class="greyStar fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+
+							<div class="thumb thumbn_A">
+								<div id="thumbn_A5_img" class="thumbn_A_img"> </div>
+								<div class="thumbn_A_info">
+									<span class="boldTxt"> Auberge Le Panier</span>
+									<span class=""> Nuit à partir de 23€</span> 
+									<div class="starBloc starBloc_A">
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="greyStar fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+
+							<div class="thumb thumbn_A">
+								<div id="thumbn_A6_img" class="thumbn_A_img"> </div>
+								<div class="thumbn_A_info">
+									<span class="boldTxt"> Hôtel chez Amina </span> 
+									<span> Nuit à partir de 96€</span>
+									<div class="starBloc starBloc_A">
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+										<i class="blueStar fas fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a href="">
+							<div class="boldTxt"> 
+								Afficher plus 
+						</div>
+						</a>
+					</div>
+				</section>
+			</div>
+
+
+
+
+			<div id="bigBloc2" class="bigBloc">
+				<section id="activitySection">
+					<div class="underSectionBlock">
+						<h2> Activités à Marseille </h2>
+						<div id="thumbNcontainerC" class="thumbNcontainer">
+							<!-- COLONNE -->
+							<div class="column">
+								<div class="thumb thumbn_C thumbn_C_long">
+									<div id="thumbn_C1_img" class="thumbn_C_img"></div>
+									<div class="thumbn_C_info boldTxt">
+										<span>Vieux Port</span>
+									</div>
+								</div>
+							</div>
+							<!-- end colonne-->
+
+							<!-- COLONNE -->
+							<div class="column">
+								<div id="thumbn_C2" class="thumb thumbn_C thumbn_C_nrml">
+									<div id="thumbn_C2_img" class="thumbn_C_img"></div>
+									<div class="thumbn_C_info boldTxt">
+										<span>Fort de Pomègues</span>
+									</div>
+								</div>
+
+								<div id="thumbn_C3" class="thumb thumbn_C thumbn_C_small">
+									<div id="thumbn_C3_img" class="thumbn_C_img"></div>
+									<div class="thumbn_C_info boldTxt">
+										<span>Îles de Frioul</span>
+									</div>
+								</div>
+							</div>
+							<!-- end colonne-->
+
+							<!-- COLONNE -->
+							<div class="column">
+								<div id="thumbn_C4" class="thumb thumbn_C thumbn_C_long">
+									<div id="thumbn_C4_img" class="thumbn_C_img"></div>
+									<div class="thumbn_C_info boldTxt">
+										<span>Parc National des Calanques</span>
+									</div>
+								</div>
+							</div>
+							<!-- end colonne-->
+
+							<!-- COLONNE -->
+							<div class="column">
+								<div id="thumbn_C5" class="thumb thumbn_C thumbn_C_small">
+									<div id="thumbn_C5_img" class="thumbn_C_img"></div>
+									<div class="thumbn_C_info boldTxt">
+										<span>Notre-Dame-de-la-Garde</span>
+									</div>
+								</div>
+
+								<div id="thumbn_C6" class="thumb thumbn_C thumbn_C_nrml">
+									<div id="thumbn_C6_img" class="thumbn_C_img"></div>
+									<div class="thumbn_C_info boldTxt">
+										<span>Parc Longchamp</span>
+									</div>
+								</div>
+							</div>
+							<!-- end colonne-->
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+
+<!---->
+
+		<footer>
+			<div class="footerDiv">
+				<h3> A propos </h3>
+				<a href="" class="footerDivTxt"> Fonctionnement du site </a> <br />
+				<a href="" class="footerDivTxt"> Conditions générales de vente </a> <br />
+				<a href="" class="footerDivTxt"> Données et confidentialité </a> <br />
+			</div>
+			<div class="footerDiv">
+				<h3> Nos hébergement </h3>
+				<a href="" class="footerDivTxt"> Charte qualité </a> <br />
+				<a href="" class="footerDivTxt"> Soumettre votre hôtel </a> <br />
+			</div>
+
+			<div class="footerDiv">
+				<h3> Assistance </h3>
+				<a href="" class="footerDivTxt"> Centre d'aide </a> <br />
+				<a href="" class="footerDivTxt"> Nous contacter</a> <br />
+			</div>
+		</footer>
+	</body>
+</html>		
+
+
+<!--
+
+
+
+
+	balise meta viewport
+-->
