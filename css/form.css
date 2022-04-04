@@ -46,6 +46,7 @@ nav {
 
 .navDiv {
   align-items: center;
+  font-size: calc(.6vw + 10px);
   /* aligne verticalement mais pas horizontalement, display: inline-block ne permet pas d'aligner verticalement mais permet l'utilisation de text-align*/
   display: inline-flex;
   flex-wrap: wrap;
@@ -81,6 +82,9 @@ header {
   width: 100%;
   height: auto;
 }
+header h3{
+  font-size: calc(.6vw + 10px);
+}
 
 footer {
   display: flex;
@@ -90,6 +94,9 @@ footer {
   width: 100%;
   box-sizing: content-box;
   background: rgba(100, 100, 100, .1);
+}
+footer h3{
+  font-size: calc(.8vw + 9px);
 }
 
 .footerDiv {
@@ -111,7 +118,11 @@ section {
 
 .underSectionBlock {
   width: calc(100% - 50px);
+  height: 100%;
   margin: 25px;
+}
+.underSectionBlock-b{
+  height: 88%;
 }
 
 .thumbNcontainer {
@@ -121,8 +132,10 @@ section {
   width: 100%;
 }
 
-
-
+#thumbNcontainerA {
+  width: 100%;
+  height: calc(85%);
+}
 
 #thumbNcontainerB {
   width: 100%;
@@ -131,7 +144,7 @@ section {
 
 #thumbNcontainerC {
   width: 100%;
-  height: 95%;
+  height: 90%;
 }
 
 .thumbVide {
@@ -241,6 +254,7 @@ h3 {
   margin: 0;
   padding-top: 10px;
   padding-bottom: 10%;
+  font-size: calc(.8vw + 5px);
   /* ou line-height: 1.5; ? */
 }
 
@@ -422,7 +436,6 @@ input[type=submit] {
   margin-bottom: 25px;
   display: flex;
   width: 100%;
-  flex-direction: row-reverse;
 }
 
 .thumb {
@@ -438,31 +451,25 @@ input[type=submit] {
   height: 20%;
 }
 
-.bloc{
-  display: block;
-}
-
 /* HEBERGEMENT */
 #lodgingSection {
-  width: calc(1760 / 2975 * 100vw);
-  height: calc(1250 / 2975 * 100vw);
   box-sizing: content-box;
-  justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
+  width: calc(1760 / 2882 * 100vw);
+  height: calc(1250 / 2882 * 100vw);
 }
 
 .thumbn_A {
   display: flex;
   border: solid white 5px;
   border-radius: 15px;
-  width: calc(472 / 2975 * 100vw - 1vw);
-  height: calc(400 / 2975 * 100vw - 1vw);
+  width: calc(470 / 2882 * 100vw);
+  height: calc(382 / 2882 * 100vw);
   display: flex;
   flex-wrap: wrap;
   background: white;
   overflow: hidden;
-  margin: 1vw;
   /* permet d'obtenir un arrondi sur le haut de l'image */
 }
 
@@ -487,38 +494,15 @@ input[type=submit] {
 .overflow{
   overflow: hidden;
 }
-#thumbn_A1_img {
-  background-image: url("../img/lodging/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-}
-
-#thumbn_A2_img {
-  background-image: url("../img/lodging/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-}
-
-#thumbn_A3_img {
-  background-image: url("../img/lodging/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-}
-
-#thumbn_A4_img {
-  background-image: url("../img/lodging/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-}
-
-#thumbn_A5_img {
-  background-image: url("../img/lodging/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-}
-
-#thumbn_A6_img {
-  background-image: url("../img/lodging/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-}
 
 
 /* POPULAIRE */
 #popularSection {
-  width: calc(836 / 2975 * 100vw);
-  height: calc(1250 / 2975 * 100vw);
   box-sizing: content-box;
   justify-content: space-between;
   display: flex;
+  width: calc(840 / 2882 * 100vw);
+  height: calc(1250 / 2882 * 100vw);
 }
 
 .title_B {
@@ -554,17 +538,6 @@ input[type=submit] {
   background-position: center;
 }
 
-#thumbn_B1_img {
-  background-image: url("../img/lodging/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-}
-
-#thumbn_B2_img {
-  background-image: url("../img/lodging/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg");
-}
-
-#thumbn_B3_img {
-  background-image: url("../img/lodging/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-}
 
 
 /* ACTIVITE */
@@ -573,8 +546,8 @@ input[type=submit] {
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  margin-top: 2vw;
+  width: calc(2680/ 2882 * 100vw);
+  height: calc(1250 / 2882 * 100vw);
   background-color: transparent;
 }
 
@@ -622,36 +595,11 @@ input[type=submit] {
   height: 100%;
 }
 
-#thumbn_C1_img {
-  background-image: url(../img/activity/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+
+.afficherplus{
+  display: flex;
+  width: 40vw;
 }
-
-#thumbn_C2_img {
-  background-image: url(../img/activity/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-  background-position: center;
-}
-
-#thumbn_C3_img {
-  background-image: url(../img/activity/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-  background-position: center;
-}
-
-#thumbn_C4_img {
-  background-image: url(../img/activity/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-  background-position: center;
-}
-
-#thumbn_C5_img {
-  background-image: url(../img/activity/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-  background-position: center;
-}
-
-#thumbn_C6_img {
-  background-image: url(../img/activity/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
-  background-position: center;
-}
-
-
 
 
 
@@ -674,17 +622,12 @@ input[type=submit] {
     margin-right: 25px;
   }
 
-
-  .bigbloc{
-    flex-direction: row-reverse;
-  }
-  #bigBloc2 {
-    min-height: 580px;
+  .bigBloc {
     height: 48vw;
     flex-direction: row-reverse;
   }
 
-  
+
 
   .column {
     width: 24%;
@@ -709,28 +652,40 @@ input[type=submit] {
     padding-bottom: 10px;
   }
 
-
-
-  #lodgingSection {
-    height: auto;
+  .bigBloc {
+    height: 100%;
+    display: block;
+    min-height: auto;
+    flex-direction: column;
   }
 
-  #thumbNcontainerA {
-    min-height: 415px;
+  #lodgingSection{
+    width: calc(2680/ 2882 * 100vw);
+    height: calc(1250 / 2882 * 100vw * 1.5);
   }
-
   .thumbn_A {
-    min-height: 180px;
-    width: calc(472  / 2975 * 100vw * (1 + 1/3) );
-    height: calc(400 / 2975 * 100vw * (1 + 1/3) );
+    width: calc(470 / 2882 * 100vw * 1.5);
+    height: calc(382 / 2882 * 100vw * 1.5);}
+
+  #popularSection{
+    width: calc(2680/ 2882 * 100vw);
+    height: calc(1250 / 2882 * 100vw * 1.5 / 2.5);
   }
 
-
-  #popularSection {
-    width: calc(836 / 2975 * 100vw * 1.2);
+  #thumbNcontainerB {
+    height: 65%;
   }
 
-  
+  .thumbn_B {
+    display: inline-flex;
+    max-width: 30%;
+    min-height: 90%;
+    /*
+                      max-width: 30%;
+                      min-height: 120px; 
+                      max-height: 120px;
+                      */
+  }
 
   .thumbn_B {
     font-size: calc(.6vw + 7px);
@@ -745,25 +700,13 @@ input[type=submit] {
     min-height: 1200px;
   }
 
-  #thumbNcontainerC {
-    height: 100%;
-  }
+
 
   .column {
     width: 48%;
     height: 48%;
   }
 
-  .thumbVide {
-    background-color: transparent;
-    border: transparent;
-    display: flex;
-    box-shadow: none;
-  }
-
-  .thumbVide:hover {
-    box-shadow: none;
-  }
 }
 
 /*end tablette*/
@@ -854,6 +797,7 @@ input[type=submit] {
   #lodgingSection {
     min-width: 100%;
     background-color: white;
+    height: auto;
   }
 
   .thumbn_A {
@@ -861,19 +805,16 @@ input[type=submit] {
     min-height: 50vw;
   }
 
-  .thumbn_A_img {
-    min-height: 40vw;
-  }
-
 
 
   #popularSection {
     min-width: 100%;
     border-radius: 0;
+    height: auto;
   }
 
   .thumbn_A_info {
-    font-size: calc(2vw + 10px);
+    font-size: calc(2vw + 8px);
   }
 
   .thumbn_B {
@@ -885,6 +826,9 @@ input[type=submit] {
   .thumbn_B_info {
     font-size: calc(2.5vw + 5px);
   }
+  .thumbn_B_info h3{
+    font-size: calc(3vw + 5px);
+  }
 
   .title_B {
     font-size: calc(3vw + 10px);
@@ -893,6 +837,7 @@ input[type=submit] {
 
   #activitySection {
     min-width: 100%;
+    height: auto;
   }
 
   .column {
@@ -910,6 +855,18 @@ input[type=submit] {
   .thumbVide {
     display: none;
   }
+}
+
+.minwidthmax{
+  min-width: 100%;
+}
+
+.imgSet{
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /*end mobile*/
