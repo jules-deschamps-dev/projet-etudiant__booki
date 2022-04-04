@@ -121,10 +121,8 @@ section {
   width: 100%;
 }
 
-#thumbNcontainerA {
-  width: 100%;
-  height: calc(85%);
-}
+
+
 
 #thumbNcontainerB {
   width: 100%;
@@ -424,6 +422,7 @@ input[type=submit] {
   margin-bottom: 25px;
   display: flex;
   width: 100%;
+  flex-direction: row-reverse;
 }
 
 .thumb {
@@ -439,8 +438,14 @@ input[type=submit] {
   height: 20%;
 }
 
+.bloc{
+  display: block;
+}
+
 /* HEBERGEMENT */
 #lodgingSection {
+  width: calc(1760 / 2975 * 100vw);
+  height: calc(1250 / 2975 * 100vw);
   box-sizing: content-box;
   justify-content: space-between;
   display: flex;
@@ -451,12 +456,13 @@ input[type=submit] {
   display: flex;
   border: solid white 5px;
   border-radius: 15px;
-  width: 30%;
-  height: 42%;
+  width: calc(472 / 2975 * 100vw - 1vw);
+  height: calc(400 / 2975 * 100vw - 1vw);
   display: flex;
   flex-wrap: wrap;
   background: white;
   overflow: hidden;
+  margin: 1vw;
   /* permet d'obtenir un arrondi sur le haut de l'image */
 }
 
@@ -478,7 +484,9 @@ input[type=submit] {
   background-repeat: no-repeat;
   background-position: 80%;
 }
-
+.overflow{
+  overflow: hidden;
+}
 #thumbn_A1_img {
   background-image: url("../img/lodging/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
 }
@@ -506,6 +514,8 @@ input[type=submit] {
 
 /* POPULAIRE */
 #popularSection {
+  width: calc(836 / 2975 * 100vw);
+  height: calc(1250 / 2975 * 100vw);
   box-sizing: content-box;
   justify-content: space-between;
   display: flex;
@@ -664,15 +674,17 @@ input[type=submit] {
     margin-right: 25px;
   }
 
-  .bigBloc {
+
+  .bigbloc{
+    flex-direction: row-reverse;
+  }
+  #bigBloc2 {
     min-height: 580px;
     height: 48vw;
     flex-direction: row-reverse;
   }
 
-  #lodgingSection {
-    min-width: 65%;
-  }
+  
 
   .column {
     width: 24%;
@@ -697,12 +709,7 @@ input[type=submit] {
     padding-bottom: 10px;
   }
 
-  .bigBloc {
-    height: 100%;
-    display: block;
-    min-height: auto;
-    flex-direction: column;
-  }
+
 
   #lodgingSection {
     height: auto;
@@ -714,32 +721,16 @@ input[type=submit] {
 
   .thumbn_A {
     min-height: 180px;
+    width: calc(472  / 2975 * 100vw * (1 + 1/3) );
+    height: calc(400 / 2975 * 100vw * (1 + 1/3) );
   }
 
-  .thumbn_A_img {
-    min-height: 100px;
-  }
-
-  .thumbn_A_txt {
-    width: 100%;
-    min-height: 30%;
-  }
 
   #popularSection {
-    padding: 0;
-    height: auto;
+    width: calc(836 / 2975 * 100vw * 1.2);
   }
 
-  .thumbn_B {
-    display: inline-flex;
-    max-width: 47%;
-    min-height: 17vw;
-    /*
-                      max-width: 30%;
-                      min-height: 120px; 
-                      max-height: 120px;
-                      */
-  }
+  
 
   .thumbn_B {
     font-size: calc(.6vw + 7px);
